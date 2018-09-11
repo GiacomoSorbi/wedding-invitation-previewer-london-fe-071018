@@ -14,6 +14,10 @@ h1 {
   justify-content: space-around;
 }
 
+.input, .display {
+  padding: 2vw;
+}
+
 .options {
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +47,13 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 0;
+  overflow-y: hidden;
+}
+
+form.active {
+  max-height: 80vh;
+  transition: max-height 0.15s ease-in-out;
 }
 
 .input {
@@ -72,4 +83,13 @@ form {
 
 .display {
   width: 50%;
+}
+
+.display h2 {
+  font-size: 3vw;
+}
+
+#preview-img {
+  width: 100%;
+  height: 80vh;
 }
