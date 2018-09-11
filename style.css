@@ -14,10 +14,13 @@ h1 {
   justify-content: space-around;
 }
 
+<<<<<<< HEAD
 .input, .display {
   padding: 2vw;
 }
 
+=======
+>>>>>>> e0af54b3b0b95e3d476a18d88a88941d04eb2cb2
 .options {
   display: flex;
   flex-wrap: wrap;
@@ -47,6 +50,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   max-height: 0;
   overflow-y: hidden;
 }
@@ -54,6 +58,8 @@ form {
 form.active {
   max-height: 80vh;
   transition: max-height 0.15s ease-in-out;
+=======
+>>>>>>> e0af54b3b0b95e3d476a18d88a88941d04eb2cb2
 }
 
 .input {
@@ -83,6 +89,7 @@ form.active {
 
 .display {
   width: 50%;
+<<<<<<< HEAD
 }
 
 .display h2 {
@@ -92,4 +99,6 @@ form.active {
 #preview-img {
   width: 100%;
   height: 80vh;
+=======
+>>>>>>> e0af54b3b0b95e3d476a18d88a88941d04eb2cb2
 }

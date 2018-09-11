@@ -6,6 +6,7 @@ const options = [
   {theme: "dinosaurs", display: ""}
 ];
 
+<<<<<<< HEAD
 const fields = ["first-spouse", "second-spouse", "date", "location"];
 
 const images = {
@@ -16,10 +17,13 @@ const images = {
   dinosaurs: "https://sep.yimg.com/ay/prehistory/inflatable-t-rex-dinosaur-blow-up-toy-43-inch-1.jpg"
 }
 
+=======
+>>>>>>> e0af54b3b0b95e3d476a18d88a88941d04eb2cb2
 document.addEventListener("DOMContentLoaded", ()=>{
   const optionsContainer = document.getElementsByClassName("options")[0];
   
   const displayTitle = document.getElementById("display-title");
+<<<<<<< HEAD
   const previewImage = document.getElementById("preview-img");
   
   const renderCard = theme => {
@@ -29,6 +33,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
     console.log(document.getElementsByTagName("form")[0].classList);
     previewImage.src = images[theme];
     previewImage.alt = theme;
+=======
+  
+  const renderCard = theme => {
+    displayTitle.innerHTML = `Current Theme: ${theme}`;
+>>>>>>> e0af54b3b0b95e3d476a18d88a88941d04eb2cb2
   }
 
   options.forEach(option => {
@@ -38,6 +47,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     button.addEventListener("click", () => renderCard(option.theme));
     optionsContainer.appendChild(button);
   })
+<<<<<<< HEAD
   
   fields.forEach(field => {
     document.getElementById(field).addEventListener("input", e => {
@@ -45,4 +55,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
       document.getElementById(`display-${field}`).innerHTML = e.target.value;
     })
   })
+=======
+>>>>>>> e0af54b3b0b95e3d476a18d88a88941d04eb2cb2
 });
